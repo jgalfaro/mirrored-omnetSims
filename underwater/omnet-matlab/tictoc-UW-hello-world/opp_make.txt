@@ -1,0 +1,12 @@
+# C++ include paths (with -I)
+INCLUDE_PATH = -I. -I/usr/local/MATLAB/R2010b/extern/include
+
+# Additional object and library files to link with
+EXTRA_OBJS =
+
+# Additional libraries (-L, -l options)
+LIBS = -L/usr/local/MATLAB/R2010b/bin/glnx86 -L/usr/local/MATLAB/R2010b/runtime/glnx86 -L. -lmat -lchannel -lmwmclmcrrt
+
+command:
+
+opp_makemake -f --deep -O out -I/usr/local/MATLAB/R2010b/extern/include -I/home/joaquin/Desktop/omnetpp-4.2.2/src/common -I/home/joaquin/Desktop/omnetpp-4.2.2/src/envir -I/home/joaquin/Desktop/omnetpp-4.2.2/include/platdep -L/home/joaquin/UWNet/tictocUW/lib/ -L/usr/local/MATLAB/R2010b/runtime/glnx86/ -L/usr/local/MATLAB/R2010b/bin/glnx86/ -lmat -lTIF -lmwmclmcrrt
